@@ -139,11 +139,12 @@ We are going to enforce a preventive guardrail, where in a user is not allowed t
 2. Activate CloudFormation Hook: Navigate to CloudFormation > Public Extensions > Select **Hooks** under **Extension Type** > Select **Third Party** under **Publisher** and then search for **Extension name prefix = AWSSamples::S3BucketEncrypt::Hook**
 
     _Activate_Hook_
-    > Note: **The execution role is _extremely_ important**. An invalid role will not allow to create any buckets.
-    ![Activate_Hook](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/7brnrafehxbkvj9igswu.png)
+    ![Activate_Hook](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/t7ixkahr5l64yb5rzuf2.png)
 
     _Hook_Execution_Role_
-    ![Hook_Execution_Role](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/9p7l1l1jt8q62g74fbt0.png)
+    > Note: **The execution role is _extremely_ important**. An invalid role will not allow to create any buckets.
+    ![Hook_Execution_Role](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/shs0uxx0tziqxw4n8unm.png)
+
     
     _Hook_Config_
 
@@ -327,3 +328,4 @@ We are going to enforce a preventive guardrail, where in a user is not allowed t
 - [S3 bucket creation with encryption is failing because of AWSSamples::S3BucketEncrypt::Hook](https://stackoverflow.com/questions/71333656/s3-bucket-creation-with-encryption-is-failing-because-of-awssampless3bucketenc)
 
 ---
+
