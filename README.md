@@ -76,7 +76,7 @@ All Hook extension types must have the type configuration schema set to be invok
 AWS CloudFormation supports hook type specific configuration which can be used at set by hook users. CloudFormation service will refer this configuration at runtime when it is executing hook in an account. Hook configuration supports enabling or disabling hook at stack level, failure mode and hook runtime property values.
 
 Below is the example of typical hook configuration:
-```json
+```
 "{
     "CloudFormationConfiguration": {
         "HookConfiguration": {
@@ -103,7 +103,7 @@ Hook configuration support below properties:
 
 - Example: For the above sample hook schema, the configuration json would be
 
-  ```json
+  ```
   "{
       "CloudFormationConfiguration": {
           "HookConfiguration: {
@@ -148,7 +148,7 @@ We are going to enforce a preventive guardrail, where in a user is not allowed t
     
     _Hook_Config_
 
-    ```json
+    ```
     {
       "CloudFormationConfiguration": {
         "HookConfiguration": {
@@ -179,7 +179,7 @@ We are going to enforce a preventive guardrail, where in a user is not allowed t
 
 3. Use the following CloudFormaton template to create an unenrypted bucket, The expected result is a failure due to CloudFormation Hook preventive guardrail.
 
-    ```json
+    ```
     AWSTemplateFormatVersion: "2010-09-09"
     Description: This CloudFormation template provisions an unencrypted S3 Bucket
     Resources:
@@ -195,7 +195,7 @@ We are going to enforce a preventive guardrail, where in a user is not allowed t
 
 4. Use the following CloudFormation Template  to create a S3 bucket with **aws:kms** encrytion, which will allow the bucket creation.
 
-    ```json
+    ```
     AWSTemplateFormatVersion: "2010-09-09"
     Description: This CloudFormation template provisions an encrypted S3 Bucket
     Resources:
@@ -245,7 +245,7 @@ We are going to enforce a preventive guardrail, where in a user is not allowed t
 
 1. Use the following CloudFormation Template to create a S3 bucket with **AES256** encrytion
 
-    ```json
+    ```
     AWSTemplateFormatVersion: "2010-09-09"
     Description: This CloudFormation template provisions an encrypted S3 Bucket
     Resources:
@@ -271,7 +271,7 @@ We are going to enforce a preventive guardrail, where in a user is not allowed t
 
     _edit-cf-hook_
 
-    ```json
+    ```
     {
       "CloudFormationConfiguration": {
         "HookConfiguration": {
